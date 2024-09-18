@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-section {
+            background-color: mediumslateblue;
+            height: 50%;
+            width: 100%;
+            position: relative;
+        }
+
+        .bottom-section {
+            background-color: lightblue;
+            height: 50%;
+            width: 100%;
+        }
+
+        .chapter-text {
+            position: absolute;
+            bottom: -35px; 
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            font-weight: 500;
+            color:white;
+            font-family: serif;
+            z-index: 2; 
+           border: 2px solid aquamarine;
+           padding: 10px;
+           box-shadow: 2px 4px 2px 2px rgba(137, 255, 253, 0.2);
+           border-radius: 2px;
+           transition: 0.5s;
+        }
+        .chapter-text:hover{
+            background: lightcoral;
+            border: 2px solid lightcoral;
+            box-shadow: 2px 4px 2px 2px rgba(240, 128, 128, 0.2)
+
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="top-section">
+          <div class="chapter-text">Salman Rizky</div>  
+        
+    </div>
+
+    <div class="bottom-section"></div>
+
+</body>
+</html>

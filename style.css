@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    /* position: relative;
+    animation-play-state: running;
+    animation: playrotate 5s infinite linear; */
+}
+
+@keyframes playrotate{
+    from{
+        right: -90%;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+h1:hover{
+    animation-play-state: paused;
+}
